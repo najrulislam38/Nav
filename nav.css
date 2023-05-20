@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+}
+
+#main-menu{
+    width: 100%;
+    clear: both;
+    margin-top: 100px;
+}
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 96%;
+}
+
+.inner-menu{
+    width: 100%;
+    background: #333333;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+#main-menu ul {
+   list-style: none;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+
+#main-menu ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 3px;
+}
+
+#main-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+    display: block;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+#main-menu ul li a:hover{
+    color: #fc713a;
+
+}
+
+#main-menu ul li:hover a{
+    color: #fc713a;
+
+}
+
+#main-menu ul li:hover ul li a{
+    color: #fff;
+
+}
+
+
+
+/*Dropdown Menu Bar*/
+
+#main-menu ul ul{
+    position: absolute;
+    background: #fc713a;
+    width: 150px;
+    left: -99999px;
+    top: 18px;
+    
+}
+
+#main-menu ul li:hover ul{
+    left: 0px;
+    
+}
+
+#main-menu ul li:hover ul ul{
+    left: -99999px;
+    
+}
+
+#main-menu ul ul li:hover ul{
+    left:  150px;
+    
+}
+#main-menu ul ul li{
+    margin: 0px;
+    display: block;
+}
+
+#main-menu ul ul li a{
+    padding: 3px 0px;
+}
+
+#main-menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main-menu ul ul li:hover a{
+    background: #333333;
+    color: #fff;
+}
+
+#main-menu ul ul li:hover ul li a{
+    background: none;
+    color: #fff;
+}
+
+#main-menu ul ul li ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main-menu ul ul ul{
+    left:150px;
+    top: 0px;
+}
+
+
